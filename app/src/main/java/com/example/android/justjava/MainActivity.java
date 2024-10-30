@@ -33,7 +33,7 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
 
-    int quantity = 2;
+    int quantity = 2; //Creation of a variable called quantity, that is an integer, with the value 2.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         boolean hasChocolate = chocolateCheckBox.isChecked();
 
         // Calculate the price
-        int price = calculatePrice(hasWhippedCream, hasChocolate);
+        int price = calculatePrice(hasWhippedCream, hasChocolate); //Storing the value of the variable price, by calling the method called calculatePrice
 
         // Display the order summary on the screen
         String message = createOrderSummary(name, price, hasWhippedCream, hasChocolate);
